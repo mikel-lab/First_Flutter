@@ -8,7 +8,6 @@ Element operator [](int index);
 void add(Element element);
 void insert(int index, Element element);
 void removeAt(int index);
-void remove(Element element);
-void move(int from, int to);
+  void removeAll();
 
 }

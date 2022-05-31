@@ -12,8 +12,10 @@ class TaskRepository implements Repository<Task>{
   @override
   Task operator [](int index) {
     // TODO: implement []
-    throw UnimplementedError();
+    return _tasks[index];
   }
+  @override
+  int get length {return _tasks.length;}
 
   @override
   void add(Task element) {
@@ -27,24 +29,16 @@ class TaskRepository implements Repository<Task>{
     _tasks.insert(index, element);
   }
 
-  @override
-  // TODO: implement length
-  int get length => throw UnimplementedError();
-
-  @override
-  void move(int from, int to) {
-    // TODO: implement move
-  }
-
-  @override
-  void remove(Task element) {
-    // TODO: implement remove
-  }
 
   @override
   void removeAt(int index) {
     // TODO: implement removeAt
     _tasks.removeAt(index);
+  }
+
+  @override
+  void removeAll() {
+   _tasks.clear();
   }
 
 }
