@@ -102,6 +102,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
+  mow:
+    dependency: "direct main"
+    description:
+      path: "/Users/mikelcobian/Desktop/Formacion/KeepCoding/Modulos/Flutter/paquetes_flutter/flutter/mow"
+      relative: false
+    source: path
+    version: "1.0.0"
   path:
     dependency: transitive
     description:
@@ -156,6 +163,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.9"
+  updatable:
+    dependency: "direct main"
+    description:
+      path: "/Users/mikelcobian/Desktop/Formacion/KeepCoding/Modulos/Flutter/paquetes_flutter/flutter/updatable"
+      relative: false
+    source: path
+    version: "1.0.0"
   vector_math:
     dependency: transitive
     description:

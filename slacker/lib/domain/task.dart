@@ -1,11 +1,24 @@
 
 
-class Task{
+import 'package:updatable/updatable.dart';
+
+class Task with Updatable{
 
 //Propiedades
 late String _description;
 late TaskState _state;
 
+ set description(String newValue){
+  changeState(() {
+    _description = newValue;
+  });
+}
+
+set state(TaskState newValue){
+    changeState(() {
+      _state = newValue;
+    });
+  }
 // Constructores
 // "designado"
 Task({required String description, required TaskState state})
@@ -41,6 +54,9 @@ _state=TaskState.toDo;
 
   @override
   int get hashCode => Object.hashAll([_description, _state]);
+
+  String get description => _description;
+  TaskState get state => _state;
 
 
 }
